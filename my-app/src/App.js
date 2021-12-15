@@ -1,16 +1,12 @@
 import React from "react";
-import Card from './components/molecules/Card.js'
+import CardList from "./components/organisms/CardList";
 
 function App() {
-	const todos = [
-		{id: 1, completed: false, titles: 'Купить Хлеб' },
-		{id: 1, completed: false, titles: 'Купить масло' },
-		{id: 1,  completed: false, titles: 'Купить молоко'},
-	]
-	return <div className="app">
-		<h1>Реакт туториал</h1>
-		<Card todos={todos}/>
-	</div>;
+  return (
+    <div className="mein">
+      <CardList />
+    </div>
+  );
 }
 
 export default App;
