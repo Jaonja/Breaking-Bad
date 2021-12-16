@@ -1,8 +1,10 @@
-import React from 'react'
+import React from "react";
+import CardList from "./components/organisms/CardList";
 
 function App() {
   return (
-    <div className="App">
+    <div className="mein">
+      <CardList />
     </div>
   );
 }
