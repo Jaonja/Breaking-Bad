@@ -2,7 +2,7 @@ import React from 'react';
 import Card from '../../molecules/Card/index'
 import styles from './styles.module.scss'
 
-const CartList = ({cards}) => {
+const CardList  = ({cards}) => {
 
   return (
     <div>
@@ -21,4 +21,4 @@ const CartList = ({cards}) => {
   );
 };
 
-export default CartList;
+export default CardList ;
