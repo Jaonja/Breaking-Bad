@@ -1,10 +1,7 @@
-import React from "react";
-import styles from "./styles.module.scss";
-import Card from "../molecules/Card";
 import { v4 as uuid } from "uuid";
 
-const CardList = () => {
-  const cards = [
+const initialState = {
+  cards: [
     {
       id: uuid(),
       name: "Walter White",
@@ -40,17 +37,10 @@ const CardList = () => {
       img: "https://vignette.wikia.nocookie.net/breakingbad/images/b/b7/HankS5.jpg/revision/latest/scale-to-width-down/700?cb=20120620014136",
       status: "Deceased",
     },
-  ];
-  const listItem = cards.map((card) => (
-    <Card
-      key={card.uuid}
-      name={card.name}
-      birthday={card.birthday}
-      img={card.img}
-      status={card.status}
-    />
-  ));
-  console.log(listItem);
-  return <div className={styles.card}>{listItem}</div>;
+  ],
 };
-export default CardList;
+
+function cartsListReducer(state = initialState) {
+  return state;
+}
+export default cartsListReducer;
