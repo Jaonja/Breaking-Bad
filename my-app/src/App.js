@@ -1,10 +1,8 @@
-import React from "react";
-import CardList from "./components/organisms/CardList";
+import React from 'react'
 
 function App() {
   return (
-    <div className="mein">
-      <CardList />
+    <div className="App">
     </div>
   );
 }
