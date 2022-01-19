@@ -1,20 +1,30 @@
 import React from "react";
-import Card from "../../molecules/Card/index";
 import styles from "./styles.module.scss";
+import Card from "../../molecules/Card/index";
+import ErrorMessage from "../../atoms/ErrorMessage/";
+import Loader from "../../atoms/Loader/";
 
-const CardList = ({ cards }) => {
+const CardList = ({ characters, isFetching, isError }) => {
   return (
     <div>
-      <div className={styles.cardList}>
-        {cards.map((card) => (
-          <Card
-            key={card.uuid}
-            name={card.name}
-            birthday={card.birthday}
-            img={card.img}
-            status={card.status}
-          />
-        ))}
+      <div>
+        {isError ? (
+          <ErrorMessage name="Данные не подгрузились" />
+        ) : !isFetching ? (
+          <div className={styles.cardList}>
+            {characters.map((character) => (
+              <Card
+                key={character.id}
+                name={character.name}
+                birthday={character.birthday}
+                img={character.img}
+                status={character.status}
+              />
+            ))}
+          </div>
+        ) : (
+          <Loader />
+        )}
       </div>
     </div>
   );
