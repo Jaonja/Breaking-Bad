@@ -2,7 +2,6 @@ import { combineReducers } from "redux";
 import cardListReducer from "./cardListReducer";
 
 const reducers = combineReducers({
-  cardListReducer,
+ cardListReducer,
 });
-
 export default reducers;
