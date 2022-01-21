@@ -3,6 +3,9 @@ import { useSelector, useDispatch } from "react-redux";
 import CardList from "./component";
 import { showCharactersList } from "../../../store/actions/getNewCharacters";
 
+import cardListReducer  from "../../../store/reducers/index"
+
+
 const CardListContainer = () => {
   const dispatch = useDispatch();
   const characters = useSelector((state) => state.cardListReducer.characters);
