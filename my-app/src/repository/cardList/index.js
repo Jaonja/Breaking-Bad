@@ -10,7 +10,6 @@ class CardList {
         "https://www.breakingbadapi.com/api/characters?limit=40"
       );
       result.value = response.data;
-      console.log(result);
     } catch (error) {
       result.error = error.response;
     }
