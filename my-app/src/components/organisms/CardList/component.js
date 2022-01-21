@@ -6,7 +6,7 @@ import Loader from "../../atoms/Loader/";
 
 const CardList = ({ characters, isFetching, isError }) => {
   return (
-    <Fragment>
+    <>
       {isError ? (
         <ErrorMessage name="Данные не подгрузились" />
       ) : !isFetching ? (
@@ -24,7 +24,7 @@ const CardList = ({ characters, isFetching, isError }) => {
       ) : (
         <Loader />
       )}
-    </Fragment>
+    </>
   );
 };
 
