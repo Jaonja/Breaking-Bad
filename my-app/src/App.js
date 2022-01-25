@@ -9,7 +9,7 @@ function App() {
   return (
     <>
       <header className={styles.page}>
-        <Link to="/">homePage</Link>
+        <Link to="/">HomePage</Link>
         <Link to="/list">List</Link>
         <Link to="/character">Сharacter</Link>
       </header>
