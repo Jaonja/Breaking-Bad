@@ -2,6 +2,7 @@ import styles from "./styles.module.scss";
 import React from "react";
 import { LazyLoadImage } from "react-lazy-load-image-component";
 
+
 const Card = ({ birthday, name, img, status }) => {
   return (
     <div className={styles.cardWrapper}>

@@ -19,5 +19,4 @@ class CardList {
     return result;
   };
 }
-
 export default new CardList();

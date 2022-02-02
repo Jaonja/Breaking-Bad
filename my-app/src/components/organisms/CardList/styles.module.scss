@@ -4,4 +4,8 @@
   display: flex;
   margin: 6.25rem 0 0 6.25rem;
   flex-wrap: wrap;
+  & .link {
+    color: inherit;
+    text-decoration: none;
+  }
 }

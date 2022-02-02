@@ -1,0 +1,102 @@
+@import "../../../assets/styles/styles.scss";
+.status {
+  width: 65px;
+  height: 32px;
+  color: #51e245;
+  margin-bottom: 32px;
+  background: rgba(48, 255, 30, 0.2);
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+.name {
+  width: 257px;
+  height: 40px;
+  font-size: 32px;
+  line-height: 40px;
+  color: #2d2d2d;
+}
+.birthday {
+  display: flex;
+  flex-direction: row;
+  margin-top: 16px;
+  p {
+    color: #a9a9a9;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+  }
+  span {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+.nickname {
+  display: flex;
+  flex-direction: row;
+  margin-top: 16px;
+  p {
+    color: #a9a9a9;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+  }
+  span {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+.wrapperImg {
+  img {
+    width: 585px;
+    height: 585px;
+  }
+}
+.wrapper {
+  display: flex;
+  flex-direction: row;
+}
+.mainWrapper {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+}
+.wrapperContent {
+  margin-left: 100px;
+}
+
+.quote {
+  display: flex;
+  flex-direction: row;
+  margin-top: 16px;
+  width: 410px;
+  height: 72px;
+
+  p {
+    color: #a9a9a9;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+  }
+  & p span {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+    color: black;
+  }
+}
