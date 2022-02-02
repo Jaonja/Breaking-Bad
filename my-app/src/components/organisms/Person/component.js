@@ -5,7 +5,11 @@ import Loader from "../../atoms/Loader/";
 
 const Person = ({ person, isFetching, isError }) => {
   let { img, name, status, birthday, nickname } = person;
-  return (
+  return isError ? (
+    <ErrorMessage />
+  ) : isFetching ? (
+    <Loader />
+  ) : (
     <div className={styles.mainWrapper}>
       <div className={styles.wrapper}>
         <div className={styles.wrapperImg}>
