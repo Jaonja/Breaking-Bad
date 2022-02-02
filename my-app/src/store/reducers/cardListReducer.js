@@ -1,6 +1,8 @@
 import {
-  FETCH_CHARACTERS, CHANGE_LOADER, ERROR_FETCHING_PERSONS
-} from "../actionTypes/importData"
+  FETCH_CHARACTERS,
+  CHANGE_LOADER,
+  ERROR_FETCHING_PERSONS,
+} from "../actionTypes/importData";
 
 const initialState = {
   characters: [],

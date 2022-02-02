@@ -7,11 +7,9 @@ import { getPersonsData } from "../../../store/actions/getPersons";
 
 const PersonContainer = () => {
   const dispatch = useDispatch();
-  const characters = useSelector((state) => state.cardListReducer.characters);
-
-  const isFetching = useSelector((state) => state.cardListReducer.isFetching);
-
-  const isError = useSelector((state) => state.cardListReducer.isError);
+  const characters = useSelector((state) => state.personsReducer.characters);
+  const isFetching = useSelector((state) => state.personsReducer.isFetching);
+  const isError = useSelector((state) => state.personsReducer.isError);
   const { id } = useParams();
   useEffect(() => {
     dispatch(getPersonsData());

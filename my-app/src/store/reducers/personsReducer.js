@@ -5,7 +5,7 @@ import {
 } from "../actionTypes/importData";
 
 const initialState = {
-  persons: [],
+  characters: [],
   isFetching: false,
   isError: false,
 };
