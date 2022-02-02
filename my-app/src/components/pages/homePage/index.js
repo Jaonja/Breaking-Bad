@@ -1,5 +1,5 @@
 import React from "react";
-import styles from "./styles.module.scss";
+
 
 const homePage = () => {
   return (
@@ -9,4 +9,3 @@ const homePage = () => {
   );
 };
 
-export default homePage;

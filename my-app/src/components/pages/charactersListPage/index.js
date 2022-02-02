@@ -9,3 +9,4 @@ const CharactersListPage = () => {
   );
 };
 export default CharactersListPage;
+
