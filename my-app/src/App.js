@@ -1,11 +1,25 @@
-import React from "react";
-import CardList from "./components/organisms/CardList";
+import { Route, Routes, Link } from "react-router-dom";
+import "./assets/styles/styles.scss";
+import HomePage from "./components/pages/homePage";
+import CharactersListPage from "./components/pages/charactersListPage/";
+import CharacterPage from "./components/pages/characterPage/";
+import styles from "./styles.module.scss";
 
 function App() {
   return (
-    <div className="mein">
-      <CardList />
-    </div>
+    <>
+      <header className={styles.page}>
+        <Link to="/">HomePage</Link>
+        <Link to="/list">List</Link>
+        <Link to="/character">Сharacter</Link>
+      </header>
+
+      <Routes>
+        <Route path="/" element={<HomePage />} />
+        <Route path="/list" element={<CharactersListPage />} />
+        <Route path="/character" element={<CharacterPage />} />
+      </Routes>
+    </>
   );
 }
 
