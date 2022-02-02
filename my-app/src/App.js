@@ -3,6 +3,8 @@ import "./assets/styles/styles.scss";
 import HomePage from "./components/pages/homePage";
 import CharactersListPage from "./components/pages/charactersListPage/";
 import CharacterPage from "./components/pages/Person";
+import CharacterPage from "./components/pages/characterPage/";
+
 import styles from "./styles.module.scss";
 
 function App() {
@@ -16,7 +18,8 @@ function App() {
         <Route path="/" element={<HomePage />} />
         <Route path="/list" element={<CharactersListPage />} />
         <Route path="/character/:id" element={<CharacterPage />} />
-      </Routes>
+        <Link to="/character">Сharacter</Link>
+      </header>
     </>
   );
 }

@@ -4,7 +4,7 @@ import style from "./style.module.scss";
 const Loader = () => {
   return (
     <div className={style.loader}>
-      <div className={style.wheel}></div>
+      <div className={style.loader_inner}></div>
     </div>
   );
 };

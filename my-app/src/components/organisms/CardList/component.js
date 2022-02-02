@@ -6,7 +6,7 @@ import Loader from "../../atoms/Loader/";
 import { Link } from "react-router-dom";
 
 const CardList = ({ characters, isFetching, isError }) => {
-  return ( 
+
     <>
       {isError ? (
         <ErrorMessage name="Данные не подгрузились" />
