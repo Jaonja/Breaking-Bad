@@ -1,4 +1,5 @@
 import React, { Fragment } from "react";
+// @ts-ignore
 import styles from "./styles.module.scss";
 import Card from "../../molecules/Card/index";
 import ErrorMessage from "../../atoms/ErrorMessage/";

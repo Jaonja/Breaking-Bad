@@ -1,4 +1,5 @@
 import React from "react";
+// @ts-ignore
 import styles from "./styles.module.scss";
 import ErrorMessage from "../../atoms/ErrorMessage/";
 import Loader from "../../atoms/Loader/";
@@ -6,14 +7,14 @@ import Loader from "../../atoms/Loader/";
 const Person = ({ person, isFetching, isError }) => {
   let { img, name, status, birthday, nickname } = person;
   return isError ? (
-    <ErrorMessage />
+    <ErrorMessage name={undefined} />
   ) : isFetching ? (
     <Loader />
   ) : (
     <div className={styles.mainWrapper}>
       <div className={styles.wrapper}>
         <div className={styles.wrapperImg}>
-          <img src={img} alt="img of person" />{" "}
+          <img src={img} alt="img of person" />
         </div>
         <div className={styles.wrapperContent}>
           <div className={styles.status}>{status}</div>
