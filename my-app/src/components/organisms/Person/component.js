@@ -3,6 +3,7 @@ import React from "react";
 import styles from "./styles.module.scss";
 import ErrorMessage from "../../atoms/ErrorMessage/";
 import Loader from "../../atoms/Loader/";
+import { Link } from "react-router-dom";
 
 const Person = ({ person, isFetching, isError }) => {
   let { img, name, status, birthday, nickname } = person;
@@ -12,6 +13,12 @@ const Person = ({ person, isFetching, isError }) => {
     <Loader />
   ) : (
     <div className={styles.mainWrapper}>
+      <Link to="/list" className={styles.link}>
+        <div className={styles.arrow}>
+          <div></div>
+          <p className={styles.ArrowTxt}>Назад в Каталог</p>
+        </div>
+      </Link>
       <div className={styles.wrapper}>
         <div className={styles.wrapperImg}>
           <img src={img} alt="img of person" />

@@ -1,102 +1,163 @@
 @import "../../../assets/styles/styles.scss";
-.status {
-  width: 65px;
-  height: 32px;
-  color: #51e245;
-  margin-bottom: 32px;
-  background: rgba(48, 255, 30, 0.2);
-  justify-content: center;
-  align-items: center;
-  display: flex;
-}
-.name {
-  width: 257px;
-  height: 40px;
-  font-size: 32px;
-  line-height: 40px;
-  color: #2d2d2d;
-}
-.birthday {
-  display: flex;
-  flex-direction: row;
-  margin-top: 16px;
-  p {
-    color: #a9a9a9;
-    font-family: Roboto;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 16px;
-    line-height: 24px;
-  }
-  span {
-    font-family: Roboto;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 16px;
-    line-height: 24px;
-  }
-}
-.nickname {
-  display: flex;
-  flex-direction: row;
-  margin-top: 16px;
-  p {
-    color: #a9a9a9;
-    font-family: Roboto;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 16px;
-    line-height: 24px;
-  }
-  span {
-    font-family: Roboto;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 16px;
-    line-height: 24px;
-  }
-}
-.wrapperImg {
-  img {
-    width: 585px;
-    height: 585px;
-  }
-}
-.wrapper {
-  display: flex;
-  flex-direction: row;
-}
+
 .mainWrapper {
   position: absolute;
   top: 50%;
   left: 50%;
   margin-right: -50%;
   transform: translate(-50%, -50%);
-}
-.wrapperContent {
-  margin-left: 100px;
+  .link {
+    color: inherit;
+    text-decoration: none;
+  }
+  .arrow {
+    cursor: pointer;
+    position: relative;
+    width: 5rem;
+    height: 3.125rem;
+    margin: 1.25rem;
+    .ArrowTxt {
+      margin-left: 7.5rem;
+      display: flex;
+    }
+    div {
+      position: relative;
+      top: 1.25rem;
+      width: 5.625rem;
+      height: 0.625rem;
+      background-color: #51e245;
+      box-shadow: 0 3px 5px rgba(0, 0, 0, 0.2);
+      left: 0;
+      display: block;
+    }
+    div::after {
+      content: "";
+      position: absolute;
+      width: 2.5rem;
+      height: 0.625rem;
+      top: 0.6875rem;
+      right: 3.75rem;
+      background-color: #51e245;
+      transform: rotate(-133deg);
+    }
+    div::before {
+      content: "";
+      position: absolute;
+      width: 2.5rem;
+      height: 0.625rem;
+      top: -0.6875rem;
+      right: 3.75rem;
+      background-color: #51e245;
+      box-shadow: 0 3px 5px rgba(0, 0, 0, 0.2);
+      transform: rotate(133deg);
+    }
+  }
 }
 
-.quote {
+.wrapper {
   display: flex;
   flex-direction: row;
-  margin-top: 16px;
-  width: 410px;
-  height: 72px;
-
-  p {
-    color: #a9a9a9;
-    font-family: Roboto;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 16px;
+  .wrapperImg {
+    img {
+      width: 36.5625rem;
+      height: 36.5625rem;
+    }
   }
-  & p span {
-    font-family: Roboto;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 16px;
-    line-height: 24px;
-    color: black;
+  .wrapperContent {
+    margin-left: 6.25rem;
+    .name {
+      width: 16.0625rem;
+      height: 2.5rem;
+      font-size: 2rem;
+      line-height: 2.5rem;
+      color: #2d2d2d;
+    }
+    .status {
+      width: 4.0625rem;
+      height: 2rem;
+      color: #51e245;
+      margin-bottom: 2rem;
+      background: rgba(48, 255, 30, 0.2);
+      justify-content: center;
+      align-items: center;
+      display: flex;
+    }
+    .birthday {
+      display: flex;
+      flex-direction: row;
+      margin-top: 1rem;
+      p {
+        color: #a9a9a9;
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 1rem;
+        line-height: 1.5rem;
+      }
+      span {
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 1rem;
+        line-height: 1.5rem;
+      }
+    }
+    .nickname {
+      display: flex;
+      flex-direction: row;
+      margin-top: 1rem;
+      p {
+        color: #a9a9a9;
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 1rem;
+        line-height: 1.5rem;
+      }
+      span {
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 1rem;
+        line-height: 1.5rem;
+      }
+    }
+  }
+  .quote {
+    display: flex;
+    flex-direction: row;
+    margin-top: 1rem;
+    width: 25.625rem;
+    height: 4.5rem;
+
+    p {
+      color: #a9a9a9;
+      font-family: Roboto;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 1rem;
+    }
+    & p span {
+      font-family: Roboto;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 1rem;
+      line-height: 1.5rem;
+      color: black;
+    }
+  }
+}
+.arrow:hover {
+  animation: arrow 1s linear infinite;
+}
+@keyframes arrow {
+  0% {
+    right: 0;
+  }
+  50% {
+    right: 0.625rem;
+  }
+  100% {
+    right: 0;
   }
 }

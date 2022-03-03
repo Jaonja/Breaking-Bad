@@ -12,7 +12,7 @@ const PersonContainer = () => {
   // @ts-ignore
   const isFetching = useSelector((state) => state.personsReducer.isFetching);
   // @ts-ignore
-  const isError = useSelector((state) => state.personsReducer.isError);
+	const isError = useSelector((state) => state.personsReducer.isError);
   const { id } = useParams();
   useEffect(() => {
     dispatch(getPersonsData());
