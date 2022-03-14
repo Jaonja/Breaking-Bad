@@ -2,22 +2,22 @@
 .logoWrapper {
   display: flex;
   justify-content: space-around;
-  height: 80px;
+  height: 5rem;
   align-items: center;
 }
 .BurgerContainer {
-  height: 40px;
-  width: 125px;
-  background-color: #f1b926;
-  border: 1.4px solid #f1b926;
+  height: 2.5rem;
+  width: 7.8125rem;
+  background-color: $BurgerColor;
+  border: 0.0625rem solid $BurgerColor;
   box-sizing: border-box;
-  border-radius: 4px;
+  border-radius: 0.25rem;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
 .logo {
-  width: 80px;
-  height: 48px;
+  width: 5rem;
+  height: 3rem;
 }

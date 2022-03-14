@@ -3,11 +3,9 @@
 .cardList {
   display: flex;
   flex-wrap: wrap;
-  background-color: #f3efef9c;
-  margin: 0 auto;
+  background-color: $f3efef9c;
   justify-content: center;
-  padding-bottom: 50px;
-  flex: 1 0 auto;
+  padding-bottom: 3.125rem;
 
   width: 100%;
   & .link {
