@@ -1,0 +1,23 @@
+@import "../../../assets/styles/styles.scss";
+.logoWrapper {
+  display: flex;
+  justify-content: space-around;
+  height: 80px;
+  align-items: center;
+}
+.BurgerContainer {
+  height: 40px;
+  width: 125px;
+  background-color: #f1b926;
+  border: 1.4px solid #f1b926;
+  box-sizing: border-box;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo {
+  width: 80px;
+  height: 48px;
+}

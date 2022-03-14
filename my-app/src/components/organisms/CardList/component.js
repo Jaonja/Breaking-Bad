@@ -12,19 +12,19 @@ const CardList = ({ characters, isFetching, isError }) => {
       {isError ? (
         <ErrorMessage name="Данные не подгрузились" />
       ) : !isFetching ? (
-        <div className={styles.cardList}>
+        <div className={styles.cardList} >
           {characters.map((character) => (
             <Link
               to={`/character/${character.char_id}`}
               className={styles.link}
             >
-              <Card
+              <Card 
                 key={character.char_id}
                 name={character.name}
                 birthday={character.birthday}
                 img={character.img}
                 status={character.status}
-              />
+               />
             </Link>
           ))}
         </div>

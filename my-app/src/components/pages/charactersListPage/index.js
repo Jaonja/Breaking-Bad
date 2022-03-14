@@ -1,12 +1,17 @@
 import React from "react";
 import CardList from "../../organisms/CardList/index";
-
+import Header from "../../organisms/Header";
+import Footer from "../../organisms/Footer";
+import styles from "./styles.module.scss"
 const CharactersListPage = () => {
-  return (
-    <div>
-      <CardList />
-    </div>
+	return (
+		<>
+      <Header />
+			<CardList />
+			<div className={styles.footer}>
+      <Footer />
+			</div>
+			</>
   );
 };
 export default CharactersListPage;
-

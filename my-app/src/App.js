@@ -8,10 +8,6 @@ import styles from "./styles.module.scss";
 function App() {
   return (
     <>
-      <header className={styles.page}>
-        <Link to="/">HomePage</Link>
-        <Link to="/list">List</Link>
-      </header>
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/list" element={<CharactersListPage />} />
