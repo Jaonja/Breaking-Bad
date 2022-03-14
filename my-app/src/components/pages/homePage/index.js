@@ -6,13 +6,15 @@ import logo from "../../../assets/img/BB.png";
 
 const homePage = () => {
   return (
-    <div>
-      <Header />
+    <>
+      <div className={styles.HeaderColor}>
+        <Header />
+      </div>
       <div className={styles.logoContainer}>
         <img className={styles.logo} src={logo} alt="logo" />
       </div>
       <Footer />
-    </div>
+    </>
   );
 };
 
