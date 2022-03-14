@@ -10,9 +10,7 @@ const homePage = () => {
       <div className={styles.HeaderColor}>
         <Header />
       </div>
-      <div className={styles.logoContainer}>
-        <img className={styles.logo} src={logo} alt="logo" />
-      </div>
+      <img className={styles.logo} src={logo} alt="logo" />
       <Footer />
     </>
   );
