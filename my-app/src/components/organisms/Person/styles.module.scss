@@ -2,10 +2,8 @@
 
 .mainWrapper {
   display: flex;
-  justify-content: center;
-  margin-bottom: 1.875rem;
-  background-color: $CharMailWR;
-  padding-bottom: 3.75rem;
+  margin: 0 auto;
+  max-width: 75rem;
   .link {
     color: inherit;
     text-decoration: none;
@@ -19,7 +17,6 @@
 
 .wrapper {
   display: flex;
-  flex-direction: row;
   margin-top: 3.125rem;
   .wrapperImg {
     img {

@@ -1,8 +1,10 @@
 @import "../../../assets/styles/styles.scss";
 
 .footer {
-  width: 100%;
-  height: auto;
+  max-width: 75rem;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
+  margin: 0 auto;
+  align-items: center;
+  min-height: 80px;
 }

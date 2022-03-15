@@ -1,15 +1,17 @@
 @import "../../../assets/styles/styles.scss";
 .logoWrapper {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   height: 5rem;
   align-items: center;
+  max-width: 75rem;
+  margin: 0 auto;
 }
 .BurgerContainer {
   height: 2.5rem;
   width: 7.8125rem;
   background-color: $BurgerColor;
-  border: 0.0625rem solid $BurgerColor;
+  border: 1.4px solid $BurgerColor;
   box-sizing: border-box;
   border-radius: 0.25rem;
   display: flex;
