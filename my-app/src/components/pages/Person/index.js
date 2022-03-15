@@ -7,9 +7,7 @@ import styles from "./styles.module.scss";
 const Person = () => {
   return (
     <>
-      <div className={styles.HeaderColor}>
-        <Header />
-      </div>
+      <Header />
       <PersonPage />
       <Footer />
     </>

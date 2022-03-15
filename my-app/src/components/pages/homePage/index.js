@@ -7,9 +7,7 @@ import logo from "../../../assets/img/BB.png";
 const homePage = () => {
   return (
     <>
-      <div className={styles.HeaderColor}>
-        <Header />
-      </div>
+      <Header />
       <img className={styles.logo} src={logo} alt="logo" />
       <Footer />
     </>
