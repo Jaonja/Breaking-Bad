@@ -1,0 +1,10 @@
+@import "../../../assets/styles/styles.scss";
+
+.footer {
+  max-width: 75rem;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  align-items: center;
+  min-height: 80px;
+}

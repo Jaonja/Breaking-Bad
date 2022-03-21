@@ -1,8 +1,10 @@
 import React, { Fragment } from "react";
+// @ts-ignore
 import styles from "./styles.module.scss";
 import Card from "../../molecules/Card/index";
 import ErrorMessage from "../../atoms/ErrorMessage/";
 import Loader from "../../atoms/Loader/";
+import { Link } from "react-router-dom";
 
 const CardList = ({ characters, isFetching, isError }) => {
   return (
@@ -10,15 +12,20 @@ const CardList = ({ characters, isFetching, isError }) => {
       {isError ? (
         <ErrorMessage name="Данные не подгрузились" />
       ) : !isFetching ? (
-        <div className={styles.cardList}>
+        <div className={styles.cardList} >
           {characters.map((character) => (
-            <Card
-              key={character.char_id}
-              name={character.name}
-              birthday={character.birthday}
-              img={character.img}
-              status={character.status}
-            />
+            <Link
+              to={`/character/${character.char_id}`}
+              className={styles.link}
+            >
+              <Card 
+                key={character.char_id}
+                name={character.name}
+                birthday={character.birthday}
+                img={character.img}
+                status={character.status}
+               />
+            </Link>
           ))}
         </div>
       ) : (

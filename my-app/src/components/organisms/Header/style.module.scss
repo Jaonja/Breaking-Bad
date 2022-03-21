@@ -1,0 +1,25 @@
+@import "../../../assets/styles/styles.scss";
+.logoWrapper {
+  display: flex;
+  justify-content: space-between;
+  height: 5rem;
+  align-items: center;
+  max-width: 75rem;
+  margin: 0 auto;
+}
+.BurgerContainer {
+  height: 2.5rem;
+  width: 7.8125rem;
+  background-color: $cardWrappertBG;
+  border: 1.4px solid $BurgerColor;
+  box-sizing: border-box;
+  border-radius: 0.25rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo {
+  width: 5rem;
+  height: 3rem;
+}

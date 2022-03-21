@@ -1,9 +1,10 @@
+@import "../../../assets/styles/styles.scss";
 .error {
   width: 40rem;
   padding: 1.5rem;
   margin: 10rem auto;
   display: flex;
-  background-color: #e99379;
+  background-color: $error;
   justify-content: center;
   align-items: center;
   border-radius: 0.6rem;

@@ -1,7 +1,23 @@
 @import "../../../assets/styles/styles.scss";
 
 .cardList {
-  display: flex;
-  margin: 6.25rem 0 0 6.25rem;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 1.5rem;
+  margin: 0 auto;
+  max-width: 75rem;
+  margin-top: 3rem;
+  min-height: calc(100vh - 208px);
+
+  width: 100%;
+  & .link {
+    color: inherit;
+    text-decoration: none;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .cardList {
+    grid-template-columns: 1fr 1fr;
+  }
 }

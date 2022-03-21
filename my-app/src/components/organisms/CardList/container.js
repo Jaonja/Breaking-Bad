@@ -11,6 +11,7 @@ const CardListContainer = () => {
   useEffect(() => {
     dispatch(showCharactersList());
   }, [dispatch]);
+
   return (
     <CardList
       characters={characters}

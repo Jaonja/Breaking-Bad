@@ -1,0 +1,123 @@
+@import "../../../assets/styles/styles.scss";
+
+.mainWrapper {
+  display: flex;
+  margin: 0 auto;
+  max-width: 75rem;
+  min-height: calc(100vh - 160px);
+  .link {
+    color: inherit;
+    text-decoration: none;
+    margin-bottom: 3.125rem;
+    display: flex;
+    .logoTxt {
+      margin-left: 0.625rem;
+    }
+  }
+}
+
+.wrapper {
+  display: flex;
+  margin-top: 3.125rem;
+  .wrapperImg {
+    img {
+      width: 36.5625rem;
+      height: 36.5625rem;
+    }
+  }
+  .wrapperContent {
+    margin-left: 6.25rem;
+    margin-top: 4.25rem;
+    .name {
+      width: 16.0625rem;
+      height: 2.5rem;
+      font-size: 2rem;
+      line-height: 2.5rem;
+      color: $cardDataColor;
+    }
+    .status {
+      width: 4.0625rem;
+      height: 2rem;
+      color: $carsStatusColor;
+      margin-bottom: 2rem;
+      background: $statusBG;
+      justify-content: center;
+      align-items: center;
+      display: flex;
+    }
+    .birthday {
+      display: flex;
+      flex-direction: row;
+      margin-top: 1rem;
+      p {
+        color: $quotePColor;
+        font-size: 1rem;
+        line-height: 1.5rem;
+      }
+      span {
+        font-size: 1rem;
+        line-height: 1.5rem;
+      }
+    }
+    .nickname {
+      display: flex;
+      flex-direction: row;
+      margin-top: 1rem;
+      p {
+        color: $quotePColor;
+        font-size: 1rem;
+        line-height: 1.5rem;
+      }
+      span {
+        font-size: 1rem;
+        line-height: 1.5rem;
+      }
+    }
+  }
+  .quote {
+    display: flex;
+    flex-direction: row;
+    margin-top: 1rem;
+    width: 25.625rem;
+    height: 4.5rem;
+
+    p {
+      color: $quotePColor;
+      font-size: 1rem;
+    }
+    & p span {
+      font-size: 1rem;
+      line-height: 1.5rem;
+      color: $black;
+    }
+  }
+}
+
+.one {
+  display: flex;
+  flex-direction: column;
+}
+.link:hover {
+  animation: arrow 1s linear infinite;
+}
+@keyframes link {
+  0% {
+    right: 0;
+  }
+  50% {
+    right: 0.625rem;
+  }
+  100% {
+    right: 0;
+  }
+}
+
+@media screen and (max-width: 1073px) {
+  .wrapper {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+@media screen and (max-width: 600px) {
+}

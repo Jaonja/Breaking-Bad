@@ -10,7 +10,7 @@ const initialState = {
   isError: false,
 };
 
-const cardListReducer = (state = initialState, action) => {
+const personsReducer = (state = initialState, action) => {
   switch (action.type) {
     case FETCH_CHARACTERS:
       return {
@@ -31,4 +31,4 @@ const cardListReducer = (state = initialState, action) => {
       return state;
   }
 };
-export default cardListReducer;
+export default personsReducer;
