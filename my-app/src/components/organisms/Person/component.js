@@ -6,7 +6,7 @@ import Loader from "../../atoms/Loader/";
 import { Link } from "react-router-dom";
 import logo from "../../../assets/img/Vector.png";
 
-const Person = ({ person, isFetching, isError }) => {
+const Person = ({ quote, person, isFetching, isError }) => {
   let { img, name, status, birthday, nickname } = person;
   return isError ? (
     <ErrorMessage name={undefined} />
@@ -38,11 +38,7 @@ const Person = ({ person, isFetching, isError }) => {
           <div className={styles.quote}>
             <p>
               Цитата:
-              <span>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Non,
-                aliquam laoreet vivamus sed. Diam fames mi, quam tellus cursus
-                volutpat velit massa.
-              </span>
+              <span>{quote}</span>
             </p>
           </div>
         </div>
