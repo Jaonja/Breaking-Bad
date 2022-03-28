@@ -10,9 +10,13 @@ import {
 
 const PersonContainer = () => {
   const dispatch = useDispatch();
+  // @ts-ignore
   const characters = useSelector((state) => state.personsReducer.characters);
+  // @ts-ignore
   const isFetching = useSelector((state) => state.personsReducer.isFetching);
+  // @ts-ignore
   const quote = useSelector((state) => state.personsReducer.quote);
+  // @ts-ignore
   const isError = useSelector((state) => state.personsReducer.isError);
   const { id } = useParams();
 

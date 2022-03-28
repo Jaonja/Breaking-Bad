@@ -4,6 +4,7 @@ import styles from "./styles.module.scss";
 import ErrorMessage from "../../atoms/ErrorMessage/";
 import Loader from "../../atoms/Loader/";
 import { Link } from "react-router-dom";
+// @ts-ignore
 import logo from "../../../assets/img/Vector.png";
 
 const Person = ({ quote, person, isFetching, isError }) => {
